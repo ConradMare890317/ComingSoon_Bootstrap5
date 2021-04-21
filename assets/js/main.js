@@ -147,7 +147,7 @@ Game.prototype.draw = function(ctx) {
           attributes.helpTimer += 75;
       }
       ctx.font = "bold 32px sans-serif";
-      let tw = ctx.measureText("Tap to play").width;
+      let tw = ctx.measureText("Tap to play <br> A single tap after start causes turning. Avoid the trees!").width;
       ctx.font = "bold "+(32*0.9*this.w/tw)+"px sans-serif";
       ctx.fillText("Tap to play", this.x+this.w/2, this.y+this.h/2);
   }
